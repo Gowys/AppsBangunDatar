@@ -30,17 +30,15 @@ public class Segitiga extends BangunDatar{
     public void setTinggi(double tinggi) {
         this.tinggi = tinggi;
     }
-    
-    
 
     @Override
     double luas() {
-        return 0.5 * this.alas * this.tinggi;
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
     double keliling() {
-        return this.alas + tinggi + getSisiMiring();
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     //Overload
@@ -56,5 +54,4 @@ public class Segitiga extends BangunDatar{
     public float getSisiMiring(){
         return (float) Math.sqrt((this.alas*this.alas)+(this.tinggi*this.tinggi));
     }
-    
 }
