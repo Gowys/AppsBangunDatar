@@ -37,9 +37,6 @@ public class Lingkaran extends BangunDatar{
     public String getNamaBangunDatar() {
         return super.getNamaBangunDatar(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
-    
-    
-    
 
     @Override
     double luas() {

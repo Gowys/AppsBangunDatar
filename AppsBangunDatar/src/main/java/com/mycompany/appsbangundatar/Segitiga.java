@@ -9,49 +9,46 @@ package com.mycompany.appsbangundatar;
  * @author dell
  */
 public class Segitiga extends BangunDatar{
+    
     private double alas;
     private double tinggi;
+    private double sisi;
 
     public Segitiga() {
-    }
-
-    public double getAlas() {
-        return alas;
     }
 
     public void setAlas(double alas) {
         this.alas = alas;
     }
 
-    public double getTinggi() {
-        return tinggi;
+    public double getAlas() {
+        return alas;
     }
 
     public void setTinggi(double tinggi) {
         this.tinggi = tinggi;
     }
 
+    public double getTinggi() {
+        return tinggi;
+    }
+
+    public double getSisi() {
+        return sisi;
+    }
+
+    public void setSisi(double sisi) {
+        this.sisi = sisi;
+    }
+
     @Override
     double luas() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return 0.5 * alas * tinggi;
     }
 
     @Override
     double keliling() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return sisi + sisi + sisi;
     }
     
-    //Overload
-    public float luas(float alas, float tinggi){
-        return 0.5 * (this.alas * this.tinggi);
-    }
-    
-    //Overload
-    public float keliling(float alas, float tinggi){
-        return this.alas + this.tinggi + getSisiMiring();
-    }
-    
-    public float getSisiMiring(){
-        return (float) Math.sqrt((this.alas*this.alas)+(this.tinggi*this.tinggi));
-    }
 }
